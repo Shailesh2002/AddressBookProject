@@ -1,0 +1,159 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    position: relative;
+}
+
+.wrapper {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    margin-bottom: 80px; /* Space for footer */
+}
+
+/* Form Container */
+.form-container {
+    background: #fff;
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    max-width: 450px; /* Reduced from 600px */
+}
+
+.form-container h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 1.6rem; /* Slightly smaller heading */
+}
+
+/* Form Groups */
+.form-group {
+    margin-bottom: 1.2rem; /* Reduced spacing */
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 0.4rem;
+    color: #555;
+    font-weight: 600;
+    font-size: 0.9rem; /* Slightly smaller labels */
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 0.7rem; /* Slightly reduced padding */
+    border: 2px solid #e0e0e0;
+    border-radius: 4px;
+    font-size: 0.9rem; /* Slightly smaller font */
+    transition: border-color 0.3s ease;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: #333;
+    outline: none;
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 80px; /* Reduced height */
+}
+
+/* Button Styles */
+.btn-group {
+    display: flex;
+    gap: 0.8rem;
+    justify-content: flex-end;
+    margin-top: 1.5rem;
+}
+
+.btn {
+    padding: 0.6rem 1.2rem; /* Slightly smaller buttons */
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 0.9rem;
+    font-weight: 600;
+    transition: transform 0.2s ease, opacity 0.2s ease;
+}
+
+.btn:hover {
+    transform: translateY(-1px);
+}
+
+.btn:active {
+    transform: translateY(0);
+    opacity: 0.9;
+}
+
+.btn-primary {
+    background-color: #333;
+    color: #fff;
+}
+
+.btn-primary:hover {
+    background-color: #444;
+}
+
+.btn-danger {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+.btn-danger:hover {
+    background-color: #c82333;
+}
+
+/* Footer Styles */
+footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    height: 60px; /* Fixed height */
+    z-index: 1000;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .form-container {
+        padding: 1.2rem;
+        margin: 1rem;
+        max-width: 100%;
+    }
+
+    .btn-group {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+    }
+}
+ 
